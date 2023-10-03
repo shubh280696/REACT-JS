@@ -1,0 +1,13 @@
+.container{
+    background-color:blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80vh;
+    padding: auto;
+}
+.subcont{
+    box-sizing: border-box;
+    background-color:blanchedalmond;
+    color: rgb(248, 245, 238);
+}
