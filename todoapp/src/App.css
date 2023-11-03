@@ -9,18 +9,24 @@ body{
 .input-container{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
 }
-.input-box-todo{
-
+.input{
+display: flex ;
   justify-content: center;
   align-items: center;
-}
-.main-container{
+ } 
+ .list-item{
+  display: flex ;
+    justify-content: center;
+    align-items: center;
+   } 
+.main{
+ 
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  width: auto;  
 }
 .center-container{
   height: 500px;

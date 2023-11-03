@@ -25,6 +25,10 @@ import UpdateData from './7.input/UpdateData'
 
 import UseRef from './11.Hook/useRef,'
 import MultipleInput from './10.multipleinput/PasswordVisible'
+import Router from './12.Routder/Router'
+import IncDec from './4.UseState/IncDec'
+import PasswordVisible from './10.multipleinput/PasswordVisible'
+
 
 
 
@@ -57,7 +61,7 @@ function App() {
 
       {/* <ConditionCom/> */}
       {/* -------------------usestate------- */}
-      {/* <UseStateFun/> */}
+        {/* <UseStateFun/> */}
       {/* <UseStateClass/> */}
       {/* <StatePro1/> */}
 
@@ -67,10 +71,13 @@ function App() {
      {/* <InputData/> */}
      {/* <DeleteData/> */}
     {/* <Input2/> */}
-    {/* <UpdateData/> */}
+    <UpdateData/>/
   
      {/* <UseRef/> */}
-  <MultipleInput/>
+  {/* <MultipleInput/> */}
+     <IncDec/>
+       {/* <Router/> */}
+       <PasswordVisible/>
     </div>
   )
 }

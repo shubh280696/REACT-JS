@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { Eye, EyeOffIcon, Pencil, XCircle } from "lucide-react";
 import { Button, Form, FormGroup, Input, Label, Table } from 'reactstrap'
-// import "./index.css"
+
 
 export default function PasswordVisible() {
     let [userData, setUserdata] = useState({ firstName: "", lastName: "", age: "", email: "", password: "" })
@@ -22,7 +22,7 @@ export default function PasswordVisible() {
         setUserArr(newData)
     }, [searchtext])
 
-    // INPUT
+    // -----------------------------------INPUT
 
     let addDataToArr = () => {
 
@@ -35,7 +35,7 @@ export default function PasswordVisible() {
         }
     }
 
-    // DELETE
+    // -------------------------------DELETE
 
     let deleteHandler = (index) => {
         const deleteData = window.confirm("Do you want to delete?");
@@ -48,7 +48,7 @@ export default function PasswordVisible() {
         }
     }
 
-    // UPDATE
+    // ---------------------- UPDATE
 
     function updateHandler(data, index) {
         setUserdata({ ...data })
@@ -77,13 +77,7 @@ export default function PasswordVisible() {
         }
     }
 
-    // function passwordVisibility() {
 
-    //     setShowIndex(true)
-    //     setTimeout(() => {
-    //         setShowIndex(false)
-    //     }, 5000);
-    // }
 
     return (
         <>
@@ -97,7 +91,7 @@ export default function PasswordVisible() {
                             value={userData.firstName}
                             id="firstName"
                             name="firstName"
-                            placeholder="Enter your firstName"
+                            placeholder="Enter your first Name"
                             type="text"
                             onChange={(element) => setUserdata({ ...userData, firstName: element?.target?.value })}
                         />
@@ -112,7 +106,7 @@ export default function PasswordVisible() {
                             name="lastname"
 
 
-                            placeholder="Enter your Lastname"
+                            placeholder="Enter your Last name"
                             type="text"
                             onChange={(element) => setUserdata({ ...userData, lastName: element?.target?.value })}
                         />
@@ -157,12 +151,12 @@ export default function PasswordVisible() {
                         />
                     </FormGroup>
                     {
-                        // index || index === 0 ?
+
                         updateMode ?
                             (<Button color='success' style={{
                                 width: "100%"
                             }} onClick={() => updateDataToArray()}>Update</Button>)
-                            : (<Button className='m-1 bg-light text-success border-danger rounded-3' style={{
+                            : (<Button className='m-1 bg-light text-danger border-danger rounded-3' style={{
                                 width: "100%"
                             }} onClick={() => addDataToArr()}>Submit</Button>)
                     }
