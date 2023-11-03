@@ -28,6 +28,7 @@ import MultipleInput from './10.multipleinput/PasswordVisible'
 import Router from './12.Routder/Router'
 import IncDec from './4.UseState/IncDec'
 import PasswordVisible from './10.multipleinput/PasswordVisible'
+import Home from './tops/Home'
 
 
 
@@ -45,6 +46,7 @@ function App() {
       {/* <ClassCom/> */}
       {/* <FunCom/> */}
       {/* <HomePage /> */}
+   
       {/* -----------------props--------- */}
       {/* <PropFunsCom  name={"shubham"}age={24}/> */}
       {/* <PropFunsCom  name={"Ananaa"}/> */}
@@ -71,13 +73,14 @@ function App() {
      {/* <InputData/> */}
      {/* <DeleteData/> */}
     {/* <Input2/> */}
-    <UpdateData/>/
+    {/* <UpdateData/>/ */}
   
      {/* <UseRef/> */}
   {/* <MultipleInput/> */}
      <IncDec/>
        {/* <Router/> */}
-       <PasswordVisible/>
+       {/* <PasswordVisible/> */}
+     <Home/>
     </div>
   )
 }
