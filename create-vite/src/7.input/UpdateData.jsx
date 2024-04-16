@@ -4,18 +4,23 @@ import { Button, Form, FormGroup, Input, Label, Table } from "reactstrap";
 
 export default function UpdateData() {
   let [name, setName] = useState("");
+  // let [number, setNumber] = useState("");
   let [userArr, setUserArr] = useState([]);
   let [index, setIndex] = useState(null);
   let [updateMode, setUpdateMode] = useState(false);
  
   const getData = (element) => {
     setName(element.target.value);
+    
   };
   
   // add data to array
   const addDataToArr = () => {
     setUserArr([...userArr, name]);
+    
     setName("");
+  
+    
   };
 
   // UPDATE
@@ -48,7 +53,7 @@ export default function UpdateData() {
 
   return (
     <>
-      <h1>Email is {name} <div class="spinner-border text-danger" role="status">
+      <h1> {name} <div class="spinner-border text-danger" role="status">
   <span class="visually-hidden">Loading...</span>
 </div></h1>
       <Form className="border p-3 border border-primary rounded-3">
@@ -64,6 +69,20 @@ export default function UpdateData() {
             className="border-warning text-danger"
           />
         </FormGroup>
+
+        {/* <FormGroup>
+          <Label for="name ">Email</Label>
+          <Input
+            value={number}
+            id="number"
+            name="number"
+            placeholder="Enter your number"
+            type="number"
+            onChange={(e) => setNumber(e?.target?.value)}
+            className="border-warning text-danger"
+          />
+        </FormGroup> */}
+        
         {/* {index || index === 0 ? ( */}
         {updateMode ? (
           <Button
@@ -124,28 +143,9 @@ export default function UpdateData() {
       <div class="spinner-border text-primary" role="status">
   <span class="visually-hidden">Loading...</span>
 </div>
-<div class="spinner-border text-secondary" role="status">
-  <span class="visually-hidden">Loading...</span>
-</div>
-<div class="spinner-border text-success" role="status">
-  <span class="visually-hidden">Loading...</span>
-</div>
-<div class="spinner-border text-danger" role="status">
-  <span class="visually-hidden">Loading...</span>
-</div>
-<div class="spinner-border text-warning" role="status">
-  <span class="visually-hidden">Loading...</span>
-</div>
-<div class="spinner-border text-info" role="status">
-  <span class="visually-hidden">Loading...</span>
-</div>
-<div class="spinner-border text-light" role="status">
-  <span class="visually-hidden">Loading...</span>
-</div>
-<div class="spinner-border text-dark" role="status">
-  <span class="visually-hidden">Loading...</span>
-</div>
-</div>
+
+
+    </div>
     </>
   );
 }

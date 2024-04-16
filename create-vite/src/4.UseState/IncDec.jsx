@@ -19,7 +19,7 @@ export default function IncDec() {
         <>
             <div style={{
                 backgroundColor: "#3737ec",
-                height: "700px "
+                height: "300px "
             }}>
                 <div style={{
                     display: "flex",

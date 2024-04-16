@@ -1,5 +1,6 @@
 
 import './App.css'
+import './index.css'
 import ClassCom from './2.componet/classcom'
 import FunCom from './2.componet/FunCom'
 import HomePage from './2.componet/project/Homepage'
@@ -29,6 +30,8 @@ import Router from './12.Routder/Router'
 import IncDec from './4.UseState/IncDec'
 import PasswordVisible from './10.multipleinput/PasswordVisible'
 import Home from './tops/Home'
+import TodoList from './Todolist/TodoList'
+import NewData from './task/Newdata'
 
 
 
@@ -72,15 +75,21 @@ function App() {
       {/* <LifeCycle/> */}
      {/* <InputData/> */}
      {/* <DeleteData/> */}
-    {/* <Input2/> */}
+     {/* <NewData/> */}
+    {/* <Input2/>  project */}
     {/* <UpdateData/>/ */}
   
-     {/* <UseRef/> */}
-  {/* <MultipleInput/> */}
-     <IncDec/>
-       {/* <Router/> */}
+      {/* <MultipleInput/> */}
        {/* <PasswordVisible/> */}
-     <Home/>
+       {/* ------------assimt----------------- */}
+     {/* <IncDec/> */}
+     {/* <Home/> */}
+
+     {/* <UseRef/> */}
+       {/* <Router/> */}
+       {/* ----------------------------TODOLIST------------ */}
+       {/* <TodoList/> */}
+       {<NewData/> }
     </div>
   )
 }

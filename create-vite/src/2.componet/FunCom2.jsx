@@ -9,3 +9,4 @@ export default function FunCom2() {
   );
 }
 
+

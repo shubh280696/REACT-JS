@@ -9,7 +9,7 @@ export default function PasswordVisible() {
     let [index, setIndex] = useState(null)
     let [updateMode, setUpdateMode] = useState(false)
     let [searchtext, setSearchtext] = useState("")
-    let [showIndex, setShowIndex] = useState(null)
+    let [showIndex, setShowIndex] = useState([])
 
     const [userArr, setUserArr] = useState([])
 
@@ -81,7 +81,7 @@ export default function PasswordVisible() {
 
     return (
         <>
-            <div className='formcss  w-100'>
+            <div className='formcss  w-50'>
                 <Form className='mainclass text bg-black border p-5 border-warning rounded-4 text-white w-100' >
                     <FormGroup>
                         <Label for="firstName ">
